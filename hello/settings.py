@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-!8&o!56lqkkbt@=7tc#&18lm(xe*9zr-u-2pq)=j!f&7x6e-eh
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
+# CSRF_TRUSTED_ORIGINS=["http://127.0.0.1:5173"]
 
 
 # Application definition
@@ -45,6 +46,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    # 启用 Session 中间层
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',#跨域中间件
     'django.middleware.common.CommonMiddleware',

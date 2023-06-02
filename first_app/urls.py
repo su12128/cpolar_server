@@ -9,8 +9,6 @@ from . import api
 app_name = 'first_app'
 
 urlpatterns = [
-    re_path('api',api.api_),
-    re_path('', views.index),
-    
+    re_path('', api.axios_api), 
     
 ]

@@ -47,9 +47,11 @@ class user_sqlie_api:
 
 
 if __name__ == "__main__":
-    params = {
-        "name": "admin1",
-        # "password":"admin"
-    }
-    use = user_sqlie_api(params)
-    use.user_select()
+    # params = {
+    #     "name": "admin1",
+    #     # "password":"admin"
+    # }
+    # use = user_sqlie_api(params)
+    # use.user_select()
+    import qrcode
+    qrcode.make("18926360105").save('./qr.jpg')
